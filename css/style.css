@@ -12,14 +12,14 @@ html {
 	scroll-behavior:smooth;
 
 
-} /* root element --> rem (알엠, 알이엠?) */
+} /* root element --> rem) */
 
 body {
 	font-family: "Noto Sans KR", sans-serif;
 	color: #222;
 	line-height: 1.5;
 	letter-spacing: -1px;	
-	overflow: hidden;
+	
 }
 
 /* ========== popup style =============== */
@@ -184,7 +184,9 @@ body {
 .container-fluid {
 	background-color: var(--fourth-color);
 	position: relative;	
+	padding: 1rem 0;
 }
+
 .prev {
 	position: absolute;
 	left: 10%;
@@ -196,11 +198,23 @@ body {
 }
 .carousel {
 	max-width: 920px;
-	margin: 0 auto;
-	padding: 1rem 0;
+	height : 300px;
+	margin: 1rem auto;
+	overflow: hidden;
 }
 .carousel div {
 	float: left;
+}
+/*posts*/
+#posts {
+	height: 300px;
+	width:300%;  /* 3x920 = 2760 */
+	transition: all ease-in-out .3s; /*스타일 속성 값의 변화가 발생하면, 중간과정을 자연스럽게 바꾸도록*/
+}
+/*carousel post */
+.post{
+	width:920px;
+	
 }
 .attach-img {
 	width: 30%;   /* 920px의 30% 해당하는 크기 */
@@ -285,7 +299,7 @@ material-symbols-outlined{
 	display: inline-block;  /*inline:텍스트 요소라서 글꼴 크기에 영향받음*/
 	width : 15px;
 	height : 15px;
-	border-radius: 50%;
+	border-radius: 100%;
 	overflow: hidden;
 	color:white;
 }
