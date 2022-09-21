@@ -7,8 +7,9 @@
 	--fourth-color: #45648B;
 	--text-color: #fff;
 }
-html { font-size: 20px; 
-		scroll-behavior:smooth;
+html {
+	font-size: 20px; 
+	scroll-behavior:smooth;
 
 
 } /* root element --> rem (알엠, 알이엠?) */
